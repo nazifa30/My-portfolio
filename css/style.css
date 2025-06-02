@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    line-height: 1.5;
+    
+}
+
+.header {
+    background-color: #171F1E;
+    position: fixed; /* Fixes the header at the top */
+    top: 0; /* Positions it at the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Keeps it above other content */
+}
+
+.main {
+    background-color: #222a35;
+    padding-top: 70px; /* Adds space for the fixed header */
+}
+
+.footer {
+    background-color: #70756D;
+}
+
+h1, h3 {
+    color: #FFFFFF;
+}
+
+p {
+    color: #D9D9D9
+}
+
+li{
+    color: #D9D9D9;
+    list-style-type: none
+}
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: color 0.3s ease; /* Transition effect */
+}
+
+.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+   }
+
+ a:hover {
+    color: #9909f3f5; /* Color on hover */
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+}
+
+.text-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* Stack text items vertically */
+    align-items: center; /* Center text items */
+}
+.intro img {
+    margin-top: 100px;
+    clip-path: circle(50%); /* Makes the image circular */
+    border: 2px solid #9909f3f5; /* Circular border */
+    width: 200px; /* Set width */
+    height: 200px; /* Set height */
+    object-fit: cover; /* Ensures the image fills the circle */
+    border-radius: 50%; /* Ensures the border is also circular */
+
+    }
+
+    .section{
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center;
+        align-items: center; /* Center items horizontally */
+    }
+
+
+    .about {
+        display:inline-flex;
+        flex-wrap: wrap;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center;
+        align-items: center; /* Center items horizontally */
+        text-align:justify; /* Center text */
+        padding: 10px; /* Padding inside the box */
+        margin-top: 0px; /* Space above the section */
+        max-width: 600px; /* Initial max width */
+        box-shadow: 0 4px 10px rgba(153, 9, 243, 0.5); /* Background shadow */
+
+    
+    
+    }
+
+    .about-text{
+        font-size: 14px;
+         }
+
+         #myskills {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction:column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
+            text-align: center; /* Center text */
+            padding: 20px; /* Padding inside the box */
+            margin-top: 20px;
+        
+        }
+        
+    
+        #myskills ul {
+            display: flex; /*  flexbox for the list */
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            flex-direction: column; /* Stack items vertically */
+            justify-content: center; /* Center items horizontally */
+            list-style: none; /* Remove default list styling */
+            padding: 0; /* Remove default padding */
+        }
+
+        #myskills li {
+            display: flex; /* Use flexbox for each list item */
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            align-items: center; /* Center items vertically */
+            margin: 10px; /* Space between items */
+            
+        }
+    
+   
+
+        #myskills img {
+        width: 20px; /* Set icon size */
+        height: 20px; /* Set icon size */
+        margin-right: 10px; /* Space between icon and text */
+       }
+    
+
+        #experience {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        text-align: center; /* Center text */
+        max-width: 500px; /* Set a maximum width for the section */
+        margin: 20px auto; /* Center the section and add vertical spacing */
+     }
+    
+    .job {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column; /* Stack job title and date vertically */
+        align-items: center; /* Center job details */
+        margin: 10px 0; /* Space between job entries */
+        padding: 10px; /* Padding inside each job box */
+        border: 2px solid #9909f3f5; /* Border with specified color */
+        box-shadow: 0 4px 10px rgba(153, 9, 243, 0.5); /* Background shadow */
+        width: 100%; /* Full width of the job box */
+        max-width: 500px; /* Max width for job boxes */
+    }
+
+    .job p{
+        font-size: 14px;
+         }
+
+     #education {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            flex-wrap: wrap;
+            align-items: center; /* Center items horizontally */
+            text-align: center; /* Center text */
+            max-width: 400px; /* Set a maximum width for the section */
+            margin: 20px auto; /* Center the section and add vertical spacing */
+            box-shadow: 0 4px 10px rgba(153, 9, 243, 0.5); /* Background shadow */
+            margin-top: 50px;
+            
+        }
+
+        #education p{
+            font-size: 14px;
+        }
+        
+        #projects {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+            justify-content: center; /* Center project boxes horizontally */
+            margin: 20px auto; /* Center the section and add vertical spacing */
+        }
+        
+        .project {
+            display: flex;
+            flex-direction: column; /* Stack the image, title, and description vertically */
+            align-items: center; /* Center items horizontally */
+            border: 2px solid #9909f3f5; /* Border with the specified color */
+            padding: 10px; /* Padding inside each project box */
+            margin: 10px; /* Space between project boxes */
+            width: 250px; /* Set a fixed width for each project box */
+            margin-top: 60px;
+        }
+        
+        .project img {
+            width: 250px;
+            
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .project p{
+            text-align: justify;
+            font-size: 14px;
+        }
