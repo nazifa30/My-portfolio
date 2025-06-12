@@ -242,7 +242,7 @@ a {
             justify-content: center; /* Center the content vertically */
             margin: 50px auto; /* Center the section and add vertical spacing */
             width: 50%; /* Full width */
-            max-width: 350px; /* Maximum width for the contact form */
+            max-width: 400px; /* Maximum width for the contact form */
             padding: 10px; /* Padding inside the section */
             border: 2px solid #9909f3f5; /* White border color */
             box-shadow: 0 4px 10px #9909f3f5; /* Shadow effect */
